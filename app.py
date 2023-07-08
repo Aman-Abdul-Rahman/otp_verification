@@ -55,7 +55,7 @@ def get_otp():
     print(verification_check.status)
 
     if verification_check.status == "pending":
-        return render_template('otp_verify.html')    
+        return render_template('otp_error.html')    
     else:
         return redirect("https://project-c272.onrender.com/")
 
